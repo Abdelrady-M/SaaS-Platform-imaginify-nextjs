@@ -1,8 +1,8 @@
 import MobileNav from '@/components/shared/Mobilenav'
 import SideBar from '@/components/shared/Sidebar'
-import React from 'react'
+import { Toaster } from '@/components/ui/toaster'
 
-const Layput = ({children}:{children:React.ReactNode}) => {
+const Layout = ({children}:{children:React.ReactNode}) => {
   return (
     <main className='root'>
         <SideBar/>
@@ -12,8 +12,9 @@ const Layput = ({children}:{children:React.ReactNode}) => {
                 {children}
             </div>
         </div>
+        <Toaster />
     </main>
   )
 }
 
-export default Layput
+export default Layout
