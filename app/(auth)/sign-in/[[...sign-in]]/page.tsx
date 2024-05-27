@@ -1,7 +1,7 @@
-import { SignIn } from '@clerk/nextjs'
+import { SignIn } from "@clerk/nextjs";
 
 const SignInPage = () => {
-  return <SignIn />
+    return <SignIn fallbackRedirectUrl={'/'} path="/sign-in"/>;
 }
 
 export default SignInPage
